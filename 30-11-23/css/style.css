@@ -1,0 +1,25 @@
+#titulo2 {
+  font-size: 40px;
+}
+
+img {
+  height: 200px;
+}
+
+div {
+  display: flex;
+  justify-content: space-around;
+  /* visibility: hidden; */
+}
+
+.texto {
+  color: red;
+}
+
+div #textoSecundario {
+  color: #adc229;
+}
+
+#textoSecundario {
+  color: blue;
+}
