@@ -3,7 +3,7 @@ div.contenedor {
   text-align: center;
   /* Ruta relativa: Subimos una carpeta por cada "../" que pongamos */
   background-image: url('../../img/shishita.jpg');
-  padding: 100px;
+  padding: 150px;
 }
 
 
