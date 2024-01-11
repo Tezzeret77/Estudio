@@ -1,9 +1,27 @@
-
 div.contenedor {
   text-align: center;
   /* Ruta relativa: Subimos una carpeta por cada "../" que pongamos */
-  background-image: url('../../img/shishita.jpg');
+  background-image: url("../../img/shishita.jpg");
   padding: 150px;
 }
 
+.table-container {
+  margin: 10px 0;
+}
 
+/* Se aplican los estilos a todos los elementos separados por coma */
+/* table {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  border: 1px solid black;
+} */
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 20px;
+}
