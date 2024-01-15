@@ -3,10 +3,16 @@ div.contenedor {
   /* Ruta relativa: Subimos una carpeta por cada "../" que pongamos */
   background-image: url("../../img/shishita.jpg");
   padding: 150px;
+  
 }
 
-.table-container {
-  margin: 10px 0;
+.titulo {
+  text-align: center;
+}
+
+.table {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Se aplican los estilos a todos los elementos separados por coma */
@@ -25,3 +31,16 @@ table, th, td {
 th, td {
   padding: 20px;
 }
+
+.willy {
+  text-align: center;
+  margin: 50px;
+}
+
+.cabeza {
+  text-align: center;
+}
+
+
+
+
