@@ -1,7 +1,7 @@
 div.contenedor {
   text-align: center;
   /* Ruta relativa: Subimos una carpeta por cada "../" que pongamos */
-  background-image: url("../../img/shishita.jpg");
+  background-image: url("../../assets/img/shishita.jpg");
   padding: 150px;
   
 }
@@ -41,6 +41,11 @@ th, td {
   text-align: center;
 }
 
+/* CORRECCIONES */
+.enlaces a {
+  text-decoration: none;
+}
 
-
-
+.enlaces img {
+  height: 100px;
+}
