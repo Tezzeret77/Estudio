@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* CSS */
+      /* El selector con id predomina sobre el selector de clase */
+      #p1 {
+        color: blue;
+        text-decoration: none;
+      }
+      .importante {
+        color: red;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      /* Selector de etiquetas */
+      p {
+        color: green;
+        text-decoration: underline;
+      }
+
+      /* Puedes seleccionar las clases e ids especificando el tipo de etiqueta al que quieres que se aplique */
+      p#p2 {
+        font-size: 10px;
+      }
+      span.importante {
+        font-size: 10px;
+      }
+
+      /* Aplica estilos a todos los elementos que no tengan estilos ya definidos */
+      * {
+        background-color: lightgoldenrodyellow;
+      }
+
+      /* Agrupando selectores (elementos, clases, ids, ...) para aplicarselos a la vez */
+      h2,
+      h3,
+      h4 {
+        color: chocolate;
+      }
+
+      /* Acceder a elementos hijos */
+      .contenedor p span {
+        background-color: red;
+      }
+    </style>
+    <title>Estilos CSS</title>
+  </head>
+  <body>
+    <!-- HTML -->
+    <h1>Estilos CSS</h1>
+
+    <!-- Los id son únicos y no deberían repetirse entre elementos -->
+    <!-- Las clases están diseñadas para dar estilos a varios elementos con unas mismas reglas -->
+    <p id="p1" class="importante">Párrafo con id y clase</p>
+    <p class="importante">Otro párrafo con clase</p>
+
+    <div class="importante">
+      <p id="p2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, laborum?
+      </p>
+      <p>
+        Odit porro iure, at ducimus sed ratione aliquid assumenda similique.
+        <span class="importante">Negrita</span>
+      </p>
+    </div>
+
+    <h2>Título</h2>
+    <h3>Título</h3>
+    <h4>Título</h4>
+
+    <div class="contenedor">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta
+        accusamus error <span>cumque vitae totam</span> voluptatibus quam eum
+        laudantium doloribus tempora.
+      </p>
+    </div>
+
+    <script>
+      // JAVASCRIPT
+    </script>
+  </body>
+</html>
