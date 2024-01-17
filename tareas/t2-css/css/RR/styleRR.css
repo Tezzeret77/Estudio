@@ -1,51 +1,39 @@
 div.contenedor {
-  text-align: center;
+  text-align: left;
   /* Ruta relativa: Subimos una carpeta por cada "../" que pongamos */
   background-image: url("../../assets/img/shishita.jpg");
-  padding: 150px;
-  
+  padding: 130px;
+  z-index: 1;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 
-.titulo {
-  text-align: center;
+h1, h2 {
+
+  padding-left: 100px;
+
 }
 
-.table {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Se aplican los estilos a todos los elementos separados por coma */
-/* table {
-  text-align: center;
-  margin: auto;
-  width: 100%;
-  border: 1px solid black;
-} */
-
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-
-th, td {
-  padding: 20px;
-}
-
-.willy {
-  text-align: center;
-  margin: 50px;
-}
-
-.cabeza {
-  text-align: center;
-}
-
-/* CORRECCIONES */
 .enlaces a {
   text-decoration: none;
 }
 
 .enlaces img {
   height: 100px;
+}
+
+#header {
+  color: red;
+}
+
+#header2 {
+  color: yellowgreen;
+}
+
+.enlaces {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 2;
 }
