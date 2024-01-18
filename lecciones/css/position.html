@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posiciones</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      #cuerpo {
+        margin: 12px;
+      }
+
+      /* Navbar Styles */
+      .navbar {
+        background-color: #333;
+        padding: 5px;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .navbar a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 16px;
+      }
+
+      .navbar a:hover {
+        border-bottom: 2px solid #fff;
+      }
+
+      .navbar img {
+        height: 40px; /* Adjust the height of your logo */
+        width: auto;
+      }
+
+      #contenedor {
+        /* Con esto indicamos que este es el padre relativo de sus hijos */
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+
+      #hijo-izq,
+      #hijo-der {
+        width: 20px;
+        height: 20px;
+      }
+
+      #hijo-izq {
+        background-color: blue;
+      }
+      #hijo-der {
+        /* Te permite mover el elemento donde desees, siempre teniendo en cuenta el padre relativo */
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        background-color: green;
+      }
+
+      /* Se pega a la pantalla visible (viewport) */
+      #fixed {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        /* Esto hace que el punto inicial de partida sea el centro del elemento */
+        transform: translate(-50%, -50%);
+        width: 30px;
+        height: 30px;
+        background-color: orange;
+      }
+
+      #sticky {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="sticky" class="navbar">
+      <img src="your-logo.png" alt="Logo" />
+      <div class="nav-links">
+        <a href="#posiciones">Home</a>
+        <a href="#sobre-nosotros">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+    <div id="cuerpo">
+      <h1 id="posiciones">Posiciones</h1>
+
+      <div id="contenedor">
+        <div id="hijo-izq"></div>
+        <div id="hijo-der"></div>
+      </div>
+
+      <div id="fixed"></div>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium,
+        quia?
+      </p>
+      <p>
+        Accusamus vitae explicabo omnis alias. Beatae consequatur nobis deleniti
+        assumenda?
+      </p>
+      <p>Iste harum cumque, eaque impedit mollitia minus enim est explicabo!</p>
+      <p>
+        Debitis consequuntur cum aperiam fuga asperiores labore officia nesciunt
+        exercitationem.
+      </p>
+      <p>Harum qui, at nobis ullam magni adipisci magnam ex optio!</p>
+      <p>
+        Tempore odio eligendi ut repudiandae sapiente facilis error aperiam
+        expedita!
+      </p>
+      <p>
+        Labore repellendus est alias cumque obcaecati magni expedita. Aliquam,
+        cupiditate!
+      </p>
+      <p>Saepe aut quae quasi, error sequi velit est fuga dolorum!</p>
+      <p>
+        Dicta, ducimus consectetur unde qui voluptatem dolorem nostrum rem quos?
+      </p>
+      <p>
+        Aliquam fugiat quos omnis nesciunt eius! Molestiae, nulla. Ullam,
+        molestias.
+      </p>
+      <p>
+        Alias obcaecati molestiae repellat, laboriosam et ad totam incidunt
+        earum.
+      </p>
+      <p>
+        Dolores nemo laborum, mollitia maxime aliquid repellendus tempore
+        provident id!
+      </p>
+      <p>Optio blanditiis ipsum delectus magni eius fugiat ad quis dolorem.</p>
+      <p>
+        Recusandae amet expedita molestias commodi atque porro similique culpa
+        exercitationem.
+      </p>
+      <p>
+        Quae nulla fugiat laudantium exercitationem illo consectetur ducimus
+        minus! Rerum!
+      </p>
+      <p>
+        Accusantium non aspernatur necessitatibus nostrum culpa dicta facere
+        perferendis officiis?
+      </p>
+      <p>
+        Fuga officia laborum, molestias totam nobis excepturi alias explicabo
+        ipsam?
+      </p>
+      <p>
+        Ipsa quae necessitatibus a provident id beatae, aspernatur earum porro!
+      </p>
+      <p>
+        Exercitationem impedit et earum recusandae nisi ad velit cupiditate
+        atque!
+      </p>
+      <p>
+        Nihil accusamus assumenda libero consequuntur quam quos! Reiciendis,
+        nesciunt quos?
+      </p>
+      <p>
+        Laudantium rerum molestias, modi soluta ratione inventore nisi adipisci?
+        Consectetur!
+      </p>
+      <p>
+        Eligendi saepe nisi temporibus voluptate vero delectus ea quo minima.
+      </p>
+      <p>
+        Vel nobis corrupti voluptate qui reiciendis, tempore quas veniam dicta.
+      </p>
+      <p>Vel, fuga tenetur. Maiores eaque maxime porro id, doloremque quia!</p>
+      <p>
+        Totam nobis labore velit optio nisi, dolores voluptatum sequi nihil!
+      </p>
+      <p>Sequi dolor ipsam quidem excepturi quos totam amet iusto nesciunt!</p>
+      <p>
+        Adipisci repellat porro iure dolores tenetur corporis deleniti,
+        dignissimos non.
+      </p>
+      <p>
+        Quos, voluptatum numquam repudiandae quasi sapiente atque repellat et
+        nostrum.
+      </p>
+      <p>
+        A, porro! Similique aspernatur quaerat esse accusantium iusto labore
+        tenetur.
+      </p>
+      <p>
+        Veritatis corrupti hic ipsum. Accusamus autem aut provident consectetur
+        reprehenderit.
+      </p>
+      <p>
+        Architecto in sapiente dignissimos quas repudiandae iusto nobis
+        temporibus ipsa.
+      </p>
+      <p>
+        Ducimus molestias tenetur mollitia vel quaerat sapiente nesciunt quo
+        accusantium?
+      </p>
+      <p>Possimus vel nesciunt quasi quia in eum libero dolore! Earum!</p>
+      <p>Sint neque odio magnam illum ab excepturi iusto ducimus vero?</p>
+      <p>Modi dolorem nam, dolores animi expedita sint? Dolore, ullam odio!</p>
+      <p>
+        Veniam, eos optio. Quas labore asperiores, pariatur praesentium facere
+        ut.
+      </p>
+      <p>
+        Rem aperiam placeat, cumque quae ipsum laudantium blanditiis quis
+        voluptates!
+      </p>
+      <p>
+        Doloremque exercitationem fugiat consequatur tempore repudiandae magni.
+        Consectetur, placeat aspernatur.
+      </p>
+      <p>
+        Velit corporis, excepturi molestias quod id repellendus atque et
+        deserunt?
+      </p>
+      <p>
+        Molestias aut, delectus consequatur dolorem reiciendis ullam iste
+        perspiciatis asperiores.
+      </p>
+      <p>
+        Officia illo maxime repudiandae expedita eum vel omnis blanditiis fuga?
+      </p>
+      <p>
+        Voluptatibus assumenda vero voluptate quam sunt, porro vel labore quae!
+      </p>
+      <p>
+        Quia, reprehenderit dignissimos! Consectetur, nemo fugiat in accusamus
+        quam beatae.
+      </p>
+      <p>Dolor pariatur saepe corporis accusamus aut dolores amet quos eius?</p>
+      <p>
+        Facilis illum enim dignissimos a voluptatibus eveniet quaerat ipsa
+        placeat?
+      </p>
+      <p>Ipsum quasi, rem soluta odio quod cum tempore iure et!</p>
+      <p>
+        Necessitatibus maiores voluptate sunt. Minus placeat ut et excepturi
+        vel.
+      </p>
+      <p>
+        Architecto, ipsam unde? Omnis inventore sit architecto quo aspernatur
+        recusandae?
+      </p>
+      <p>
+        Iste unde assumenda maxime perspiciatis impedit, ipsa ipsam nemo totam?
+      </p>
+      <p>
+        Aliquid voluptatem, rerum tenetur quasi veniam aliquam cumque ipsum
+        molestiae.
+      </p>
+
+      <h2 id="sobre-nosotros">Sobre nosotros</h2>
+      <p>Lorem.</p>
+      <p>Lorem.</p>
+      <p>Lorem.</p>
+      <p>Lorem.</p>
+      <p>Deleniti!</p>
+      <p>Quod.</p>
+      <p>Consequatur!</p>
+      <p>Deserunt!</p>
+      <p>Quam?</p>
+      <p>Illo.</p>
+      <p>Debitis.</p>
+      <p>Quo.</p>
+      <p>Voluptates?</p>
+      <p>Deleniti!</p>
+      <p>Quod.</p>
+      <p>Consequatur!</p>
+      <p>Deserunt!</p>
+      <p>Quam?</p>
+      <p>Illo.</p>
+      <p>Debitis.</p>
+      <p>Quo.</p>
+      <p>Voluptates?</p>
+      <p>Deleniti!</p>
+      <p>Quod.</p>
+      <p>Consequatur!</p>
+      <p>Deserunt!</p>
+      <p>Quam?</p>
+      <p>Illo.</p>
+      <p>Debitis.</p>
+      <p>Quo.</p>
+      <p>Voluptates?</p>
+      <p>Deleniti!</p>
+      <p>Quod.</p>
+      <p>Consequatur!</p>
+      <p>Deserunt!</p>
+      <p>Quam?</p>
+      <p>Illo.</p>
+      <p>Debitis.</p>
+      <p>Quo.</p>
+      <p>Voluptates?</p>
+    </div>
+  </body>
+</html>

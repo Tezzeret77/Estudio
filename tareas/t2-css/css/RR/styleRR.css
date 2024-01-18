@@ -1,3 +1,7 @@
+body {
+  margin: 0
+}
+
 div.contenedor {
   text-align: left;
   /* Ruta relativa: Subimos una carpeta por cada "../" que pongamos */
@@ -31,9 +35,17 @@ h1, h2 {
   color: yellowgreen;
 }
 
-.enlaces {
+/* .enlaces {
   position: fixed;
   bottom: 10px;
   right: 10px;
   z-index: 2;
+} */
+
+.enlaces {
+  /* Si añadimos dos o mas reglas iguales, predomina la que esté más abajo, pues sobreescribe las anteriores  */
+  position: fixed;
+  position: sticky;
+  top: 0;
+  text-align: right;
 }
