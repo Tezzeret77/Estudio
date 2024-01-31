@@ -1,5 +1,5 @@
 body {
-  margin: 0
+  margin: 0;
 }
 
 div.contenedor {
@@ -13,10 +13,9 @@ div.contenedor {
   background-repeat: no-repeat;
 }
 
-h1, h2 {
-
+h1,
+h2 {
   padding-left: 100px;
-
 }
 
 .enlaces a {
@@ -48,4 +47,36 @@ h1, h2 {
   position: sticky;
   top: 0;
   text-align: right;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #202527b0;
+  overflow: auto;
+  position: sticky;
+  top: 0;
+}
+
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: orangered;
+}
+
+footer {
+  background-color: #202527b0;
+  padding: 15px;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 10px;
 }
