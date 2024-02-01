@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+
+    <style>
+      /* Pantallas pequeñas */
+      .article {
+        margin: 10px;
+        padding: 10px;
+        background-color: antiquewhite;
+        border: 1px solid black;
+      }
+
+      /* Pantallas medianas */
+      @media screen and (min-width: 620px) {
+        .article-container {
+          display: grid;
+          grid-template-columns: repeat(2, auto);
+          background-color: coral;
+        }
+      }
+
+      /* Pantallas grandes */
+      @media screen and (min-width: 900px) {
+        .article-container {
+          grid-template-columns: repeat(4, auto);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Grid</h1>
+    <div class="article-container">
+      <div class="article">
+        <h2>Lorem, ipsum.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, expedita.
+        </p>
+      </div>
+      <div class="article">
+        <h2>Deleniti, nihil!</h2>
+        <p>
+          Alias eum veniam maxime delectus tempora saepe autem accusantium
+          error.
+        </p>
+      </div>
+      <div class="article">
+        <h2>Labore, nam?</h2>
+        <p>
+          Corporis impedit consequatur quibusdam eligendi? Vel voluptates facere
+          tempore impedit.
+        </p>
+      </div>
+      <div class="article">
+        <h2>Nisi, dolor.</h2>
+        <p>
+          Voluptatum voluptates accusantium expedita reprehenderit rem
+          voluptatibus aliquam? Deserunt, cupiditate?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
