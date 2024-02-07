@@ -54,3 +54,12 @@ text-decoration: none;
   background-color: orangered;
 }
 
+@media screen and (max-width: 600px) {
+
+  .navbar a {
+    font-size: 0; 
+  }
+  .navbar a i {
+    font-size: initial; 
+  }
+}

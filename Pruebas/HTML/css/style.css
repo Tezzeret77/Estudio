@@ -1,0 +1,51 @@
+#titulo2 {
+  font-size: 40px;
+}
+
+img {
+  height: 200px;
+}
+
+div.flex {
+  display: flex;
+  justify-content: space-around;
+  /* visibility: hidden; */
+}
+
+.texto {
+  color: red;
+}
+
+/* ESTE ES MAS IMPORTANTE QUE EL DE ABAJO */
+div #textoSecundario {
+  color: #adc229;
+}
+#textoSecundario {
+  color: blue;
+}
+
+div.onomatopeya {
+  color: red;
+}
+div.onomatopeya a {
+  color: red;
+  text-decoration: none;
+}
+
+.texto-estilizado {
+  text-decoration: underline double;
+}
+
+.contenedor {
+  background-color: blue;
+  color: white;
+  margin: 10px;
+  /* margin: 10px 10px 10px 10px; */
+  padding: 10px;
+}
+
+.hijo {
+  background-color: red;
+  margin: 10px;
+  padding: 10px;
+}

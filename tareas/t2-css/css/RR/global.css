@@ -1,5 +1,6 @@
 body {
-    margin: 0;
+    margin: 0
+  
 }
 
 .button {
@@ -7,3 +8,5 @@ body {
     /* Redondea el borde de un elemento */
     border-radius: 10px;
 }
+
+

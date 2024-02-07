@@ -80,3 +80,42 @@ footer a {
   color: #333;
   margin: 0 10px;
 }
+
+@media screen and (max-width: 600px) {
+
+  nav a {
+    font-size: 0; 
+  }
+  nav a i {
+    font-size: initial; 
+  }
+}
+
+.footer {
+display: grid;
+grid-template-columns
+}
+
+@media (min-width: 900px) {
+  .footer {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+.columna2 {
+  padding: 50px;
+}
+
+.columna-grid {
+display: grid;
+grid-template-columns: repeat(2, auto);
+grid-gap: 20px;
+}
+
+h3 {
+margin-top: 0px;
+margin-bottom: 10px;
+padding: 30px;
+}
+
+
