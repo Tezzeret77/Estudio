@@ -82,22 +82,17 @@ footer a {
 }
 
 @media screen and (max-width: 600px) {
-
   nav a {
-    font-size: 0; 
+    font-size: 0;
   }
   nav a i {
-    font-size: initial; 
+    font-size: initial;
   }
-}
-
-.footer {
-display: grid;
-grid-template-columns
 }
 
 @media (min-width: 900px) {
   .footer {
+    display: grid;
     grid-template-columns: repeat(2, auto);
   }
 }
@@ -107,15 +102,17 @@ grid-template-columns
 }
 
 .columna-grid {
-display: grid;
-grid-template-columns: repeat(2, auto);
-grid-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 20px;
 }
 
 h3 {
-margin-top: 0px;
-margin-bottom: 10px;
-padding: 30px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding: 30px;
 }
 
-
+.icono1:hover {
+  background-color: blue;
+}

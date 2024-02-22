@@ -46,6 +46,20 @@
       .contenedor p span {
         background-color: red;
       }
+
+      /* Elementos con varias clases */
+      .big {
+        font-size: 30px;
+      }
+      .purple {
+        color: purple;
+      }
+      /* Elemento con las clases big y purple */
+      .big.purple {
+        background-color: pink;
+      }
+
+      
     </style>
     <title>Estilos CSS</title>
   </head>
@@ -78,6 +92,11 @@
         accusamus error <span>cumque vitae totam</span> voluptatibus quam eum
         laudantium doloribus tempora.
       </p>
+    </div>
+
+    <div>
+      <!-- Las clases de una misma etiqueta se separan por espacio -->
+      <span class="big purple">Multiclases</span>
     </div>
 
     <script>
