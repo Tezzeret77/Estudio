@@ -1,8 +1,17 @@
 function esMayorDeEdad() {
   const edad = document.querySelector("#edad").value;
 
-  // Lógica que determina si es mayor de edad en función del valor introducido
+
   let resultado = "Si";
 
+  if (edad > 18) {
+    resultado = "Sí";
+  } else if (edad == 18) {
+    resultado = "A vende coca y fuma porros";
+  } else {
+    resultado = "No";
+  }
+  
+
   document.querySelector("#mayorEdad").innerText = resultado;
-}
+  }
