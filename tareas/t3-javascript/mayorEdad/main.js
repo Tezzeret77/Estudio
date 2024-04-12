@@ -2,8 +2,6 @@ function esMayorDeEdad() {
   const edad = document.querySelector("#edad").value;
 
 
-  let resultado = "Si";
-
   if (edad > 18) {
     resultado = "Sí";
   } else if (edad == 18) {

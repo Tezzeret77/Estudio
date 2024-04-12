@@ -1,0 +1,10 @@
+button {
+  color: white;
+  background-color: blue;
+  padding: 10px;
+  transition: 1s ease-in-out;
+}
+
+button:hover{
+  
+}

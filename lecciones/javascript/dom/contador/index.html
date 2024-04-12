@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contador</title>
+    <style>
+      #counter {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Contador</h1>
+
+    <div class="counter-container">
+      <button id="sub">Restar</button>
+      <span id="counter">10</span>
+      <button id="sum">Sumar</button>
+    </div>
+
+    <script>
+      // Recoge los elementos del DOM
+      const sub = document.getElementById("sub");
+      const sum = document.getElementById("sum");
+      const counter = document.getElementById("counter");
+
+      // Convierte el contenido del contador en una variable de tipo numérico (int)
+      let counterNumber = parseInt(counter.textContent);
+
+      // Suma 1 al contador
+      function sumCounter() {
+        counterNumber = counterNumber + 1;
+        counter.textContent = counterNumber;
+      }
+
+      // Resta 1 al contador
+      function subCounter() {
+        counterNumber = counterNumber - 1;
+        counter.textContent = counterNumber;
+      }
+
+      // Añade escucha de eventos para cuando se clicken los botones
+      sum.addEventListener("click", sumCounter);
+      sub.addEventListener("click", subCounter);
+    </script>
+  </body>
+</html>
