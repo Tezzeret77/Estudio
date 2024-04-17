@@ -1,22 +1,33 @@
 #square {
-    height: 200px;
-    width: 200px;
-    margin-left: 90px;
+    height: 300px;
+    width: 300px;
+    margin-left: 710px;
+    border: 3px solid black;
     background-color: grey;
     transition: border-radius 0.3s;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
 #square:hover {
     border-radius: 50%;
+    border-color: blue;
 }
 
-.color-button { 
+.color-button, .custom-button { 
     margin-top: 40px;
     margin: 40px;
+    padding: 40px;
+    border-radius: 5px;
 }
+
+.color-button:hover {
+    background-color: var(--color);
+  }
+
+  .custom-button:hover {
+    background-color: var(--color);
+  }
 
 #color-text {
     font-weight: 100px;
@@ -25,6 +36,12 @@
 }
 
 h1 {
-    margin-left: 90px;
+    margin-left: 755px;
 }
 
+
+#box {
+    display: flex;
+    justify-content: space-around;
+
+}
